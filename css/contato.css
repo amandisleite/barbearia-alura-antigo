@@ -1,0 +1,71 @@
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.inputPadrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: #c78c19;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    filter: brightness(0.85);
+    transform: scale(1.01);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px) {
+       
+    main, form, .inputPadrao {
+        width: 90%;
+    }
+
+    .enviar {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}

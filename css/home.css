@@ -1,0 +1,152 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    width: 100%;    
+}
+
+.principal {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+    background: #FEFEFE;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+/* .titulo-principal::first-letter {
+    font-weight: bold;
+} */
+
+/* p::first-line {
+    font-style: italic;
+} */
+
+.titulo-principal::before {
+    content: '{ ';
+}
+
+.titulo-principal::after {
+    content: ' }';
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    background-color: #fff;
+    padding: 3em 0;
+    background: #888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.beneficios-itens {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+/* .itens::before {
+    content: '🞵 '
+} */
+
+.itens:nth-child(2n - 1) {
+    font-weight: bold;
+}
+
+.imagembeneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 300ms;
+}
+
+.imagembeneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 640px;
+    margin: 2em auto;
+}
+
+/* seleciona filho direto
+main > p {
+}
+
+seleciona primeiro irmão (o que vem logo depois)
+img + p {
+}
+
+seleciona todos os irmãos p de img
+img ~ p{
+}
+
+seleciona todos os p em main exceto o com id missão
+main p:not(#missao) {
+} */
+
+@media screen and (max-width: 480px) {
+    .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .beneficios-itens, .imagembeneficios {
+        width: 100%;
+    }
+
+    p, li {
+        padding: 0 0.8em;
+    }
+
+    .imagembeneficios {
+        margin: 1em 0;
+    }
+}
